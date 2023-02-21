@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-  * main - Entry point
+  * jack_bauer - Prints every minute of the day of Jack Bauer
   *
   * Return void
   */
