@@ -1,15 +1,23 @@
-#include <stdio.h>
-/**
- * main - Entry point
- *
- * Description: 
- *
- * Return: Always 0 (Success)
- */
+#include <stdio>
+#include "main.h"
 
-int main(void){ 
-	char *s="_putchar\n";
-	while (*s)
-		putchar(*s++);
+/**
+  * main - Entry point
+  *
+  * Return: Always 0
+  */
+
+int main(void)
+{
+	_putchar('_');
+	_putchar('p');
+	_putchar('u');
+	_putchar('t');
+	_putchar('c');
+	_putchar('h');
+	_putchar('a');
+	_putchar('r');
+	_putchar('\n');
+
 	return (0);
 }
