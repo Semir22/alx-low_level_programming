@@ -8,19 +8,20 @@
 
 int main(void)
 {
-	long num_1 = 612852475143;
-	long num_2 = num_1;
-	long prime = 0;
+	long num = 612852475143;
+	long divisor = 2;
+	long largest_prime = 0;
 
-	while (--num_2)
+	while (num != 1)
 	{
-		if (num_1 % num_2 == 0)
+		if (num % divisor == 0)
 		{
-			num_2 = prime;
-			break;
+			num = num / divisor;
+			largest_prime = divisor;
 		}
+		divisor += 1;
 	}
-	printf("%ld\n", prime);
+	printf("%ld\n", largest_prime);
 	return (0);
 }
 			
