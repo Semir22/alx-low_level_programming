@@ -24,4 +24,3 @@ int main(void)
 	printf("%ld\n", largest_prime);
 	return (0);
 }
-			
