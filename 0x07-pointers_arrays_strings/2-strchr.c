@@ -1,19 +1,27 @@
+#include <stdlib.h>
 #include "main.h"
 
 /**
- * _memcpy - function that copies memory area.
- * @dest: input
- * @src: input
- * @n: input
- * Return: Always 0 (Success)
+ * _strchr - locates a character in a string
+ *
+ * @s: the string to check
+ * @c: the character we're looking for
+ *
+ * Return: a pointer to the first occurance of the character @c in the string
+ * @s. Return NULL if the character isn't found
  */
 
-char *_memcpy(char *dest, char *src, unsigned int n)
+char *_strchr(char *s, char c)
 {
-	unsigned int i;
+	while (*s)
+	{
+		if (*s != c)
+			s++;
+		else
+			return (s);
+	}
+	if (c == '\0')
+		return (s);
 
-	for (i = 0; i < n; i++)
-		dest[i] = src[i];
-
-	return (dest);
+	return (NULL);
 }
